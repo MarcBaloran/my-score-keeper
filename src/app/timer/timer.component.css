@@ -1,0 +1,46 @@
+
+.period {
+    background-color: black;
+    margin: 0 auto;
+    width: 20%;
+    height: 30%;
+    min-width: 70px;
+}
+
+.quarter-value {
+    color: red;
+    font-size: 30px;
+}
+
+.timer {
+    background-color: black;
+    margin: 0 auto;
+    width: 50%;
+    height: 50%;
+    min-width: 70px;
+}
+
+.timer-value {
+    color: red;
+    font-size: 60px;
+    margin-bottom: 0;
+}
+
+.ms-cont {
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+}
+
+.minute-value {
+    width: 47%;    
+}
+
+.second-value {
+    width: 47%;    
+}
+
+.btn-cont {
+    margin-top: 5%;
+}
+

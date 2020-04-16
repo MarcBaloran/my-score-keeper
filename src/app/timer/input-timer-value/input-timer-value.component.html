@@ -1,0 +1,8 @@
+<input #minutes type="number" class="minute-value" placeholder="minutes"
+[value]="d.getMinutes()" 
+(change)="d.updateState(minutes.value, 'minutes')"/>
+>
+<input #seconds type="number" class="second-value" placeholder="seconds"
+[value]="d.getSeconds()" 
+(change)="d.updateState(seconds.value, 'seconds')"
+>
