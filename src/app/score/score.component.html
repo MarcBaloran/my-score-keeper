@@ -1,12 +1,17 @@
 <div class="jumbotron">
   <p class="display-2 score-lbl">{{teamName}}</p>
-  <p class="display-4 score">{{score}}</p>
+  <p class="display-4 score">
+    <ng-container *ngIf="totalScore > 0; else default">
+      {{totalScore}}
+    </ng-container>
+    <ng-template #default>0</ng-template>
+  </p>
   <div class="input-group mb-3">
     <div class="input-group-prepend score-amend">
-    <input type="text" class="form-control" placeholder="insert correct score" [(ngModel)]="score">
+    <input type="number" class="form-control" placeholder="correct score" [(ngModel)]="totalScore">
   </div>
   <hr class="my-4">
-  <button type="button" class="btn btn-primary btn-lg">Large button</button>
-  <button type="button" class="btn btn-primary btn-lg">Large button</button>
-  <button type="button" class="btn btn-primary btn-lg">Large button</button>
+  <button type="button" class="btn btn-primary btn-lg" (click)="addThreePoints()">+3 POINTS</button>
+  <button type="button" class="btn btn-primary btn-lg" (click)="addTwoPoints()">+2 POINTS</button>
+  <button type="button" class="btn btn-primary btn-lg" (click)="addFreeThrowPoints()">FREE THROW</button>
 </div>

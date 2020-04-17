@@ -8,10 +8,14 @@
     <div class="col-sm">
       <input type="text" class="form-control" placeholder="insert team name" [(ngModel)]="nameOne">
       <app-score *ngIf="nameOne !== ''" [teamName]="nameOne"></app-score>
-    </div>
-    <div class="col-sm">
+  </div>
+  </div>
+  <div class="row">
+    <div class="col-sm" appInputToCountdown>
       <app-timer></app-timer>
     </div>
+  </div>
+  <div class="row">
     <div class="col-sm">
       <input type="text" class="form-control" placeholder="insert team name" [(ngModel)]="nameTwo">
       <app-score *ngIf="nameTwo !== ''" [teamName]="nameTwo"></app-score>

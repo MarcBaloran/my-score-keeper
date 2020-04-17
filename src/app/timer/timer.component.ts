@@ -10,8 +10,6 @@ import { InputToCountdownDirective } from 'src/app/directives/InputToCountdown.d
 })
 export class TimerComponent implements OnInit, AfterViewInit {
   quarter = 1;
-  seconds = 0;
-  minutes = 0;
 
   @ViewChild('start', { static: true })
   startBtn: ElementRef;
@@ -42,13 +40,20 @@ export class TimerComponent implements OnInit, AfterViewInit {
         if (isCounting === null) { return of(null); }
         return isCounting ? interval(1000) : of();
       }),
-      scan((accumulatedValue, currentValue) => {
+      scan((accumulatedValue, currentValue: any) => {
         if (accumulatedValue === 0 && currentValue !== null) {
           zero$.next(null);
+          this.quarter++;
+          if (this.quarter > 4) {
+            // tslint:disable-next-line: no-console
+            alert('Game Ended!');
+            this.quarter = 1;
+            zero$.next(null);
+          }
           return accumulatedValue;
         }
         if (currentValue === null || !accumulatedValue) { return this.d.getTotalSeconds(); }
-        // return --accumulatedValue;
+        return --accumulatedValue;
       })
     );
     // End 3.1

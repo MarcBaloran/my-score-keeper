@@ -18,7 +18,7 @@ export class InputToCountdownDirective {
     // tslint:disable-next-line: radix
     let valToNumber = parseInt(value);
     if (valToNumber < 0) { valToNumber = 0; }
-    const update = this.state.value;
+    let update = this.state.value;
     if (command === 'seconds') { update.seconds = valToNumber; }
     if (command === 'minutes') { update.minutes = valToNumber; }
     update.totalTime = this.calculateSeconds(update);
@@ -28,7 +28,6 @@ export class InputToCountdownDirective {
   calculateSeconds(update) {
     let totalTime = update.seconds;
     totalTime += update.minutes * 60;
-    totalTime += (update.hours * 60) * 60;
     return totalTime;
   }
 

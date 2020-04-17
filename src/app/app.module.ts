@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { ScoreComponent } from './score/score.component';
 import { TimerComponent } from './timer/timer.component';
 import { InputToCountdownDirective } from './directives/InputToCountdown.directive';
-import {InputTimerValueComponent} from './timer/input-timer-value/input-timer-value.component';
+import { InputToTimerComponent } from './input-to-timer/input-to-timer.component';
 
 @NgModule({
    declarations: [
@@ -15,14 +15,14 @@ import {InputTimerValueComponent} from './timer/input-timer-value/input-timer-va
       ScoreComponent,
       TimerComponent,
       InputToCountdownDirective,
-      InputTimerValueComponent,
-      TimeFormatPipe
+      TimeFormatPipe,
+      InputToTimerComponent
    ],
    imports: [
       BrowserModule,
       FormsModule
    ],
-   providers: [TimeFormatPipe],
+   providers: [],
    bootstrap: [
       AppComponent
    ]
