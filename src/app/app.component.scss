@@ -1,5 +1,17 @@
 .col-sm {
-    float: left;
+    display: inline;
+
+    .score-cont {
+        display: flex;
+        align-items: center;
+
+        .team-1 {
+            display: inline;
+        }
+        .team-2 {
+            display: inline;
+        }
+    }
 }
 
 .row {
@@ -17,4 +29,13 @@
 
 .my-heading {
     text-align: center;
+}
+
+
+.score-cont1 {
+    margin-left: 2%;
+}
+
+.score-cont2 {
+    margin-right: 2%;
 }

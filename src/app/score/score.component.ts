@@ -14,23 +14,11 @@ export class ScoreComponent implements OnInit {
   ngOnInit() {
   }
 
-  addThreePoints() {
-    this.totalScore = this.totalScore + 3;
-  }
-
-  addTwoPoints() {
-    this.totalScore = this.totalScore + 2;
-  }
-
-  addFreeThrowPoints() {
-    this.totalScore = this.totalScore + 1;
-  }
 
   constructor() { }
 
   // tslint:disable-next-line: use-lifecycle-interface
   ngAfterViewInit(): void {
-
   }
 
 }

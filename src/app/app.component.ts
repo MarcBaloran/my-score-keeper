@@ -9,4 +9,12 @@ export class AppComponent {
   nameOne = '';
   nameTwo = '';
   title = 'my-score-keeper';
+
+  getDisplay() {
+    return 'inline';
+  }
+
+  getWidth(){
+    return '45%';
+  }
 }
