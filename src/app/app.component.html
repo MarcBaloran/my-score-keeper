@@ -8,11 +8,11 @@
     <div class="col-sm" appInputToCountdown>
       <div class="score-cont">
         <div class="row" [ngClass]="{'score-cont2': true}">
-          <input type="text" class="form-control" placeholder="insert team name" [(ngModel)]="nameOne">
+          <input type="text" class="form-control score-input" placeholder="insert team name" [(ngModel)]="nameOne">
           <app-score  *ngIf="nameOne !== ''" [teamName]="nameOne"></app-score>
         </div>
         <div class="row" [ngClass]="{'score-cont1': true}">
-          <input type="text" class="form-control" placeholder="insert team name" [(ngModel)]="nameTwo">
+          <input type="text" class="form-control score-input" placeholder="insert team name" [(ngModel)]="nameTwo">
           <app-score  *ngIf="nameTwo !== ''" [teamName]="nameTwo"></app-score>
         </div>
       </div>

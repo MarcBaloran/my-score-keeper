@@ -1,15 +1,15 @@
+
+
 .col-sm {
     display: inline;
 
     .score-cont {
         display: flex;
         align-items: center;
+        text-align: center;
 
-        .team-1 {
-            display: inline;
-        }
-        .team-2 {
-            display: inline;
+        .score-input {
+            max-width: 100% !important;
         }
     }
 }
@@ -34,6 +34,7 @@
 
 .score-cont1 {
     margin-left: 2%;
+    margin: 0 auto;
 }
 
 .score-cont2 {

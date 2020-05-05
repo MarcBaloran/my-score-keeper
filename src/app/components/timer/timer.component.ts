@@ -6,7 +6,7 @@ import { InputToCountdownDirective } from 'src/app/directives/InputToCountdown.d
 @Component({
   selector: 'app-timer',
   templateUrl: './timer.component.html',
-  styleUrls: ['./timer.component.css']
+  styleUrls: ['./timer.component.scss']
 })
 export class TimerComponent implements OnInit, AfterViewInit {
   quarter = 1;

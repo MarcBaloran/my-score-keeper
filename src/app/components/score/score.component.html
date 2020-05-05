@@ -8,7 +8,8 @@
   </p>
 </div>
 <div class="input-group mb-3">
-  <div class="input-group-prepend">
-    <input type="number" class="form-control score-amend" placeholder="correct score" [(ngModel)]="totalScore">
+  <input type="number" class="form-control score-amend" aria-label="correct score" aria-describedby="button-addon2" [(ngModel)]="totalScore">
+  <div class="input-group-append">
+    <button class="btn btn-outline-secondary" type="button" id="button-addon2">▼</button>
   </div>
 </div>

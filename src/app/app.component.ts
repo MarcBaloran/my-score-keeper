@@ -14,7 +14,7 @@ export class AppComponent {
     return 'inline';
   }
 
-  getWidth(){
+  getWidth() {
     return '45%';
   }
 }

@@ -3,13 +3,14 @@ import { Component, OnInit, Input, Output, AfterViewInit, ViewChild, ElementRef,
 @Component({
   selector: 'app-score',
   templateUrl: './score.component.html',
-  styleUrls: ['./score.component.css']
+  styleUrls: ['./score.component.scss']
 })
 export class ScoreComponent implements OnInit {
   @Input() teamName: string;
   btnScore = 0;
   totalScore =  0;
   tempScore = 0;
+
 
   ngOnInit() {
   }
