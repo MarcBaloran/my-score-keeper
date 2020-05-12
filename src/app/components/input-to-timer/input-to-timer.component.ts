@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { InputToCountdownDirective } from 'src/app/directives/InputToCountdown.directive';
+import { InputToCountdownDirective } from 'src/app/directives/input-to-countdown/InputToCountdown.directive';
 
 @Component({
   selector: 'app-input-to-timer',

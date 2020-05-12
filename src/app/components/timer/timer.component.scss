@@ -1,9 +1,17 @@
+.ftpa-cont {
+    display: flex;
+    align-items: center;
+}
+
+.col-sm {
+    margin: 5% 0 5%;
+}
 
 .period {
     background-color: black;
-    margin: 5% auto;
+    margin: 0 auto;
     width: 20%;
-    height: 30%;
+    height: 60%;
     min-width: 70px;
     max-width: 20% !important;
     border-radius: 10px;
@@ -15,6 +23,10 @@
         font-weight: 900;
         font-family: Verdana, Geneva, sans-serif;
     }
+}
+
+.period-lbl {
+    margin: 5% auto 0;
 }
 
 .timer {

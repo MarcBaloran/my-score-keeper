@@ -1,10 +1,27 @@
 <div class="container">
-  <div class="row">
-    <div class="col-sm period">
-      <p class="lead quarter-value">{{quarter}}</p>
+  <div class="ftpa-cont">
+    <div class="row">
+      <div class="col-sm">
+        <app-fouls></app-fouls>
+      </div>
+      <div class="col-sm">
+        <app-timeout></app-timeout>
+      </div>
+      <div class="col-sm">
+        <p class="period-lbl">Period</p>
+        <div class="period">
+          <p class="lead quarter-value">{{quarter}}</p>
+        </div>
+      </div>
+      <div class="col-sm">
+        <app-timeout></app-timeout>
+      </div>
+      <div class="col-sm">
+        <app-fouls></app-fouls>
+      </div>
     </div>
   </div>
-  <div class="row">
+  <div class="row" (click)="onToggle()">
     <div class="col-sm timer">
       <p class="lead timer-value">
         <ng-container *ngIf="intervalObs$ | async as clock; else default">
@@ -16,7 +33,7 @@
   </div>
   <div class="row">
     <div class="col-sm ms-cont">
-      <app-input-to-timer></app-input-to-timer>
+      <app-input-to-timer [hidden]="isHidden"></app-input-to-timer>
     </div>
   </div>
   <div class="row">

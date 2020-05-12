@@ -6,9 +6,11 @@ import {FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { ScoreComponent } from './components/score/score.component';
 import { TimerComponent } from './components/timer/timer.component';
-import { InputToCountdownDirective } from './directives/InputToCountdown.directive';
+import { InputToCountdownDirective } from './directives/input-to-countdown/InputToCountdown.directive';
 import { InputToTimerComponent } from './components/input-to-timer/input-to-timer.component';
-
+import { TimeoutComponent } from './components/timer/timeout/timeout.component';
+import { FoulsComponent } from './components/timer/fouls/fouls.component';
+import { ToggleDirective } from './directives/toggle/toggle.directive';
 @NgModule({
    declarations: [
       AppComponent,
@@ -16,7 +18,10 @@ import { InputToTimerComponent } from './components/input-to-timer/input-to-time
       TimerComponent,
       InputToCountdownDirective,
       TimeFormatPipe,
-      InputToTimerComponent
+      InputToTimerComponent,
+      TimeoutComponent,
+      FoulsComponent,
+      ToggleDirective
    ],
    imports: [
       BrowserModule,

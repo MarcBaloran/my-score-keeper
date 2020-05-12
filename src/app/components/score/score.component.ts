@@ -7,19 +7,21 @@ import { Component, OnInit, Input, Output, AfterViewInit, ViewChild, ElementRef,
 })
 export class ScoreComponent implements OnInit {
   @Input() teamName: string;
-  btnScore = 0;
+  isHidden = false;
   totalScore =  0;
-  tempScore = 0;
 
 
   ngOnInit() {
   }
 
-
   constructor() { }
 
   // tslint:disable-next-line: use-lifecycle-interface
   ngAfterViewInit(): void {
+  }
+
+  onToggle() {
+    this.isHidden = !this.isHidden;
   }
 
 }

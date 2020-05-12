@@ -2,15 +2,13 @@
 
 .col-sm {
     display: inline;
+    margin: 0 auto;
 
     .score-cont {
         display: flex;
         align-items: center;
         text-align: center;
 
-        .score-input {
-            max-width: 100% !important;
-        }
     }
 }
 
@@ -34,7 +32,6 @@
 
 .score-cont1 {
     margin-left: 2%;
-    margin: 0 auto;
 }
 
 .score-cont2 {

@@ -1,7 +1,7 @@
 import { Component, OnInit, AfterViewInit, ViewChild, ElementRef} from '@angular/core';
 import { fromEvent, interval, merge, of, range, BehaviorSubject, Subject } from 'rxjs';
 import { mapTo, scan, switchMap, takeUntil, concatMap, delay, mergeMap, tap, skipWhile, map } from 'rxjs/operators';
-import { InputToCountdownDirective } from 'src/app/directives/InputToCountdown.directive';
+import { InputToCountdownDirective } from 'src/app/directives/input-to-countdown/InputToCountdown.directive';
 
 @Component({
   selector: 'app-timer',
@@ -10,6 +10,7 @@ import { InputToCountdownDirective } from 'src/app/directives/InputToCountdown.d
 })
 export class TimerComponent implements OnInit, AfterViewInit {
   quarter = 1;
+  isHidden = false;
 
   @ViewChild('start', { static: true })
   startBtn: ElementRef;
@@ -57,6 +58,10 @@ export class TimerComponent implements OnInit, AfterViewInit {
       })
     );
     // End 3.1
+  }
+
+  onToggle() {
+    this.isHidden = !this.isHidden;
   }
 
 }

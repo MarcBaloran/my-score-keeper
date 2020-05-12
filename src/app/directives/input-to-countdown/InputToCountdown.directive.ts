@@ -18,6 +18,7 @@ export class InputToCountdownDirective {
     // tslint:disable-next-line: radix
     let valToNumber = parseInt(value);
     if (valToNumber < 0) { valToNumber = 0; }
+    // tslint:disable-next-line: prefer-const
     let update = this.state.value;
     if (command === 'seconds') { update.seconds = valToNumber; }
     if (command === 'minutes') { update.minutes = valToNumber; }

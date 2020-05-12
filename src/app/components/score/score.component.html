@@ -1,5 +1,5 @@
 <p class="display-2 score-lbl">{{teamName}}</p>
-<div class="container score-cont">
+<div class="container score-cont" (click)="onToggle()">
   <p class="display-4 score">
     <ng-container *ngIf="totalScore > 0; else default">
       {{totalScore}}
@@ -7,9 +7,6 @@
     <ng-template #default>0</ng-template>
   </p>
 </div>
-<div class="input-group mb-3">
+<div class="input-group mb-3" [hidden]="isHidden">
   <input type="number" class="form-control score-amend" aria-label="correct score" aria-describedby="button-addon2" [(ngModel)]="totalScore">
-  <div class="input-group-append">
-    <button class="btn btn-outline-secondary" type="button" id="button-addon2">▼</button>
-  </div>
 </div>
