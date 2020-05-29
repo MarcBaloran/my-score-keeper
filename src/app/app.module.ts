@@ -11,6 +11,7 @@ import { InputToTimerComponent } from './components/input-to-timer/input-to-time
 import { TimeoutComponent } from './components/timer/timeout/timeout.component';
 import { FoulsComponent } from './components/timer/fouls/fouls.component';
 import { ToggleDirective } from './directives/toggle/toggle.directive';
+import { HeaderComponent } from './components/header/header.component';
 @NgModule({
    declarations: [
       AppComponent,
@@ -21,7 +22,8 @@ import { ToggleDirective } from './directives/toggle/toggle.directive';
       InputToTimerComponent,
       TimeoutComponent,
       FoulsComponent,
-      ToggleDirective
+      ToggleDirective,
+      HeaderComponent
    ],
    imports: [
       BrowserModule,
