@@ -1,0 +1,25 @@
+<div class="container body-content">
+  <div class="row">
+    <div class="col-sm" appInputToCountdown>
+      <div class="score-cont">
+        <div class="row" [ngClass]="{'score-cont2': true}">
+          <div class="input-style">
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="insert team name" [(ngModel)]="nameOne" appToggle>
+            </div>
+            <app-score  *ngIf="nameOne !== ''" [teamName]="nameOne"></app-score>
+          </div>
+        </div>
+        <div class="row" [ngClass]="{'score-cont1': true}">
+          <div class="input-style">
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="insert team name" [(ngModel)]="nameTwo" appToggle>
+            </div>
+            <app-score  *ngIf="nameTwo !== ''" [teamName]="nameTwo"></app-score>
+          </div>
+        </div>
+      </div>
+      <app-timer></app-timer>
+    </div>
+  </div>  
+</div>
