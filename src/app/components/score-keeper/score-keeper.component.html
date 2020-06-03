@@ -1,25 +1,33 @@
-<div class="container body-content">
-  <div class="row">
-    <div class="col-sm" appInputToCountdown>
-      <div class="score-cont">
-        <div class="row" [ngClass]="{'score-cont2': true}">
-          <div class="input-style">
-            <div class="input-group mb-3">
-              <input type="text" class="form-control" placeholder="insert team name" [(ngModel)]="nameOne" appToggle>
+<div class="backgroundImg">
+  <div class="container body-content">
+    <div class="row" appInputToCountdown>
+      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" >
+        <div class="score-cont">
+          <div class="row">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+              <div class="input-style">
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control" placeholder="insert team name" [(ngModel)]="nameOne" appToggle>
+                </div>
+                <app-score  *ngIf="nameOne !== ''" [teamName]="nameOne"></app-score>
+              </div>
             </div>
-            <app-score  *ngIf="nameOne !== ''" [teamName]="nameOne"></app-score>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+              <div class="input-style">
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control" placeholder="insert team name" [(ngModel)]="nameTwo" appToggle>
+                </div>
+                <app-score  *ngIf="nameTwo !== ''" [teamName]="nameTwo"></app-score>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="row" [ngClass]="{'score-cont1': true}">
-          <div class="input-style">
-            <div class="input-group mb-3">
-              <input type="text" class="form-control" placeholder="insert team name" [(ngModel)]="nameTwo" appToggle>
-            </div>
-            <app-score  *ngIf="nameTwo !== ''" [teamName]="nameTwo"></app-score>
+        <div class="row">
+          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" >
+            <app-timer></app-timer>
           </div>
         </div>
       </div>
-      <app-timer></app-timer>
-    </div>
-  </div>  
+    </div>  
+  </div>
 </div>

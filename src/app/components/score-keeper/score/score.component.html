@@ -1,12 +1,20 @@
-<p class="display-2 score-lbl">{{teamName}}</p>
-<div class="container score-cont" (click)="onToggle()">
-  <p class="display-4 score">
-    <ng-container *ngIf="totalScore > 0; else default">
-      {{totalScore}}
-    </ng-container>
-    <ng-template #default>0</ng-template>
-  </p>
-</div>
-<div class="input-group mb-3" [hidden]="isHidden">
-  <input type="number" class="form-control score-amend" aria-label="correct score" aria-describedby="button-addon2" [(ngModel)]="totalScore">
+<div class="container">
+  <div class="row">
+    <div class="col-xl-12 col-lg-12 col-md-12">
+      <div class="container">
+        <p class="display-2 score-lbl">{{teamName}}</p>
+      </div>
+      <div class="score-cont" (click)="onToggle()">
+        <p class="display-4 score">
+          <ng-container *ngIf="totalScore > 0; else default">
+            {{totalScore}}
+          </ng-container>
+          <ng-template #default>0</ng-template>
+        </p>
+      </div>
+      <div class="input-group mb-3" [hidden]="isHidden">
+        <input type="number" class="form-control score-amend" aria-label="correct score" aria-describedby="button-addon2" [(ngModel)]="totalScore">
+      </div>
+    </div>
+  </div>
 </div>

@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./score-keeper.component.scss']
 })
 export class ScoreKeeperComponent implements OnInit {
-  nameOne = '';
-  nameTwo = '';
+  nameOne: string = '';
+  nameTwo: string = '';
 
   constructor() { }
 
