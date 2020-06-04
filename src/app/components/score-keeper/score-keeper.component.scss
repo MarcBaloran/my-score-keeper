@@ -1,6 +1,7 @@
 
 .backgroundImg {
   text-align:center;
+  position: fixed;
   padding:0;
   margin:0;
   top:0;
@@ -9,7 +10,6 @@
   height: 100%;
   background: var(--color-darkblue);
   background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
   background-image: /* fall back */
 url(https://i.ibb.co/WWzD5zh/128162.jpg);

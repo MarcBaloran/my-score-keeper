@@ -1,0 +1,19 @@
+.foul {
+  background-color: black;
+    margin: 0 auto;
+    min-width: 70px;
+    max-width: 20% !important;
+    border-radius: 10px;
+}
+
+.foul-lbl {
+  margin: 5% auto 0;
+
+  .foul-value {
+    color: red !important;
+    margin: 0 auto;
+    font-size: 30px;
+    font-weight: 900;
+    font-family: Verdana, Geneva, sans-serif;
+  }
+}

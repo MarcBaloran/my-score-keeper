@@ -16,6 +16,7 @@ import { ScoreKeeperComponent } from './components/score-keeper/score-keeper.com
 import { SettingsComponent } from './components/settings/settings.component';
 import { AppRoutingModule } from './app-routing.module';
 import { TutorialComponent } from './components/settings/tutorial/tutorial.component';
+
 @NgModule({
    declarations: [
       AppComponent,
