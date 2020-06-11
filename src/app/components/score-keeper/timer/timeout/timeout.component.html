@@ -1,28 +1,20 @@
 <div class="container">
     <div class="row">
-        <div class="col-lg-12">
+      <div class="col">
+        <div class="center-lbl">
           <p class="timeout-lbl">Time-out</p>
         </div>
-        <div class="col-lg-12">
-          <div class="btn-group btn-group-toggle btn-group-size" data-toggle="buttons">
-            <div class="row">
-              <div class="col-lg-4">
-                <label class="btn btn-secondary">
-                  <input type="radio" name="options" id="option1">
-                </label>
-              </div>
-              <div class="col-lg-4">
-                <label class="btn btn-secondary">
-                  <input type="radio" name="options" id="option2">
-                </label>
-              </div>
-              <div class="col-lg-4">
-                <label class="btn btn-secondary">
-                  <input type="radio" name="options" id="option3">
-                </label>
-              </div>
-            </div>
-          </div>
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-secondary" (click)="onClick()" [ngStyle]="{'background-color': isRed === true ? 'red' : 'grey'}">
+              <input type="radio" class="radio-input" name="options" id="option1">
+            </label>
+            <label class="btn btn-secondary separator">
+              <input type="radio"  class="radio-input" name="options" id="option2" (click)="onClick()" [ngStyle]="{'background-color': isRed === true ? 'red' : 'grey'}">
+            </label>
+            <label class="btn btn-secondary">
+              <input type="radio"  class="radio-input" name="options" id="option3" (click)="onClick()" [ngStyle]="{'background-color': isRed === true ? 'red' : 'grey'}">
+            </label>
         </div>
+      </div>
     </div>
 </div>

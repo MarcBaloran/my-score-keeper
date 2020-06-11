@@ -16,6 +16,7 @@ import { ScoreKeeperComponent } from './components/score-keeper/score-keeper.com
 import { SettingsComponent } from './components/settings/settings.component';
 import { AppRoutingModule } from './app-routing.module';
 import { TutorialComponent } from './components/settings/tutorial/tutorial.component';
+import { PossessionArrowComponent } from './components/score-keeper/timer/possession-arrow/possession-arrow.component';
 
 @NgModule({
    declarations: [
@@ -31,7 +32,8 @@ import { TutorialComponent } from './components/settings/tutorial/tutorial.compo
       HeaderComponent,
       ScoreKeeperComponent,
       SettingsComponent,
-      TutorialComponent
+      TutorialComponent,
+      PossessionArrowComponent
    ],
    imports: [
       BrowserModule,

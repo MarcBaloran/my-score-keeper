@@ -1,9 +1,7 @@
 <div class="container">
   <div class="row">
     <div class="col-xl-12 col-lg-12 col-md-12">
-      <div class="container">
         <p class="display-2 score-lbl">{{teamName}}</p>
-      </div>
       <div class="score-cont" (click)="onToggle()">
         <p class="display-4 score">
           <ng-container *ngIf="totalScore > 0; else default">

@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./timeout.component.scss']
 })
 export class TimeoutComponent implements OnInit {
+  isRed = true;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onClick() {
+    this.isRed = !this.isRed;
   }
 
 }

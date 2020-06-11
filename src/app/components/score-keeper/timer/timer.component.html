@@ -1,28 +1,32 @@
 <div class="container">
-  <div class="ftpa-cont">
     <div class="row">
-      <div class="col-lg-2">
+      <div class="col">
+        <app-possession-arrow [position]="'left'"></app-possession-arrow>
+      </div>
+      <div class="col">
         <app-fouls></app-fouls>
       </div>
-      <div class="col-lg-3">
+      <div class="col">
         <app-timeout></app-timeout>
       </div>
-      <div class="col-lg-2">
+      <div class="col">
         <p class="period-lbl">Period</p>
         <div class="period">
           <p class="lead quarter-value">{{quarter}}</p>
         </div>
       </div>
-      <div class="col-lg-3">
+      <div class="col">
         <app-timeout></app-timeout>
       </div>
-      <div class="col-lg-2">
+      <div class="col">
         <app-fouls></app-fouls>
       </div>
+      <div class="col">
+        <app-possession-arrow [position]="'right'"></app-possession-arrow>
+      </div>
     </div>
-  </div>
   <div class="row" (click)="onToggle()">
-    <div class="col-sm timer">
+    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 timer">
       <p class="lead timer-value">
         <ng-container *ngIf="intervalObs$ | async as clock; else default">
           {{clock | timeFormat}}
@@ -32,12 +36,12 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-sm ms-cont">
+    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 ms-cont">
       <app-input-to-timer [hidden]="isHidden"></app-input-to-timer>
     </div>
   </div>
-  <div class="row">
-    <div class="col-sm btn-cont">
+  <div class="row btn-cont">
+    <div class="col">
       <button #start type="button" class="btn btn-success">Start</button>
       <button #pause type="button" class="btn btn-warning">Pause</button>
       <button #reset type="button" class="btn btn-danger">Stop</button>

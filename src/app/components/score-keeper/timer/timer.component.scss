@@ -1,23 +1,19 @@
-.ftpa-cont {
-    display: flex;
-    align-items: center;
-}
 
-.col-lg-2, .col-lg-3 {
+.col {
     margin: 5% 0 5%;
 }
 
 .period {
     background-color: black;
     margin: 0 auto;
-    min-width: 70px;
+    min-width: 100%;
     max-width: 20% !important;
     border-radius: 10px;
 
     .quarter-value {
         color: red;
         margin: 0 auto;
-        font-size: 30px;
+        font-size: 3em;
         font-weight: 900;
         font-family: Verdana, Geneva, sans-serif;
     }
@@ -30,7 +26,7 @@
 .timer {
     background-color: black;
     margin: 0 auto;
-    width: 100%;
+    width: 50%;
     height: 50%;
     min-width: 70px;
     border-radius: 10px;
@@ -52,6 +48,8 @@
 }
 
 .btn-cont {
-    margin-top: 5%;
+    margin: 5% 0 ;
+    display: flex;
+    align-items: center;
 }
 

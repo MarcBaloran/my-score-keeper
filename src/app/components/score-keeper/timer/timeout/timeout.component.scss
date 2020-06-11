@@ -1,11 +1,29 @@
 
-.btn-secondary {
-    border-radius: 100% !important;
-    width: 50%;
-    height: 50%;
+
+.col {
+  margin: 15% auto 5%;
+  text-align: center;
+
+  .center-lbl {
+    margin: 0 auto;
+  }
+
+  .btn-secondary {
+    display: inline-block;
+    vertical-align: center;
+    margin-right: 3%;
+    border-radius: 30%;
+    padding: 0.7em;
+  } 
+
+  .radio-input {
+    display: inline-block;
+     vertical-align: center;
+ }
+
+  .timeout-lbl {
+  margin: 5% auto 5%;
+  }
+
 }
 
-.btn-group-size {
-  width: 60%
-
-}
