@@ -1,6 +1,6 @@
 import { Component, OnInit, AfterViewInit, ViewChild, ElementRef} from '@angular/core';
 import { fromEvent, interval, merge, of, range, BehaviorSubject, Subject } from 'rxjs';
-import { mapTo, scan, switchMap, takeUntil, concatMap, delay, mergeMap, tap, skipWhile, map } from 'rxjs/operators';
+import { mapTo, scan, switchMap, takeUntil, concatMap, delay, mergeMap, tap, skipWhile, map, reduce } from 'rxjs/operators';
 import { InputToCountdownDirective } from 'src/app/directives/input-to-countdown/InputToCountdown.directive';
 
 @Component({

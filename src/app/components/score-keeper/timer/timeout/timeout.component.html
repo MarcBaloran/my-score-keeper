@@ -5,14 +5,14 @@
           <p class="timeout-lbl">Time-out</p>
         </div>
         <div class="btn-group btn-group-toggle" data-toggle="buttons">
-            <label class="btn btn-secondary" (click)="onClick()" [ngStyle]="{'background-color': isRed === true ? 'red' : 'grey'}">
+            <label appTimeoutHighlight class="btn btn-secondary">
               <input type="radio" class="radio-input" name="options" id="option1">
             </label>
-            <label class="btn btn-secondary separator">
-              <input type="radio"  class="radio-input" name="options" id="option2" (click)="onClick()" [ngStyle]="{'background-color': isRed === true ? 'red' : 'grey'}">
+            <label appTimeoutHighlight class="btn btn-secondary separator">
+              <input type="radio"  class="radio-input" name="options" id="option2">
             </label>
-            <label class="btn btn-secondary">
-              <input type="radio"  class="radio-input" name="options" id="option3" (click)="onClick()" [ngStyle]="{'background-color': isRed === true ? 'red' : 'grey'}">
+            <label appTimeoutHighlight class="btn btn-secondary">
+              <input type="radio"  class="radio-input" name="options" id="option3">
             </label>
         </div>
       </div>

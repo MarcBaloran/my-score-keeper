@@ -17,6 +17,7 @@ import { SettingsComponent } from './components/settings/settings.component';
 import { AppRoutingModule } from './app-routing.module';
 import { TutorialComponent } from './components/settings/tutorial/tutorial.component';
 import { PossessionArrowComponent } from './components/score-keeper/timer/possession-arrow/possession-arrow.component';
+import { TimeoutHighlightDirective } from './directives/timeout-highlight/timeout-highlight.directive';
 
 @NgModule({
    declarations: [
@@ -33,7 +34,8 @@ import { PossessionArrowComponent } from './components/score-keeper/timer/posses
       ScoreKeeperComponent,
       SettingsComponent,
       TutorialComponent,
-      PossessionArrowComponent
+      PossessionArrowComponent,
+      TimeoutHighlightDirective,
    ],
    imports: [
       BrowserModule,
