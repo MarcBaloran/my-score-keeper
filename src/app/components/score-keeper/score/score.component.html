@@ -4,10 +4,11 @@
         <p class="display-2 score-lbl">{{teamName}}</p>
       <div class="score-cont" (click)="onToggle()">
         <p class="display-4 score">
-          <ng-container *ngIf="totalScore > 0; else default">
+          <!-- <ng-container *ngIf="totalScore > 0; else default">
             {{totalScore}}
           </ng-container>
-          <ng-template #default>0</ng-template>
+          <ng-template #default>0</ng-template> -->
+          {{ totalScore > 0 ? totalScore : 0}}
         </p>
       </div>
       <div class="input-group mb-3" [hidden]="isHidden">
