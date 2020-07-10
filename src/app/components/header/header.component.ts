@@ -9,11 +9,11 @@ import { min } from 'rxjs/operators';
 })
 export class HeaderComponent implements OnInit {
   constructor() { }
-  allplayers:{team: string, score: number}[];
-  scores: {[key:string]: number}
+  // allplayers:{team: string, score: number}[];
+  // scores: {[key:string]: number}
 
   ngOnInit(): void {
-    
+
     // this.allplayers.reduce((score,currPlayer) => ({
     //   ...score,
     //   [score[currPlayer.team]]: (score[currPlayer.team] || 0) + currPlayer.score 

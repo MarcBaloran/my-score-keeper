@@ -18,6 +18,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { TutorialComponent } from './components/settings/tutorial/tutorial.component';
 import { PossessionArrowComponent } from './components/score-keeper/timer/possession-arrow/possession-arrow.component';
 import { TimeoutHighlightDirective } from './directives/timeout-highlight/timeout-highlight.directive';
+import { PlayerListComponent } from './components/score-keeper/player-list/player-list.component';
+import { PlayerItemComponent } from './components/score-keeper/player-list/player-item/player-item.component';
 
 @NgModule({
    declarations: [
@@ -36,6 +38,8 @@ import { TimeoutHighlightDirective } from './directives/timeout-highlight/timeou
       TutorialComponent,
       PossessionArrowComponent,
       TimeoutHighlightDirective,
+      PlayerListComponent,
+      PlayerItemComponent,
    ],
    imports: [
       BrowserModule,
