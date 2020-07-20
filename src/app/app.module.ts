@@ -20,6 +20,7 @@ import { PossessionArrowComponent } from './components/score-keeper/timer/posses
 import { TimeoutHighlightDirective } from './directives/timeout-highlight/timeout-highlight.directive';
 import { PlayerListComponent } from './components/score-keeper/player-list/player-list.component';
 import { PlayerItemComponent } from './components/score-keeper/player-list/player-item/player-item.component';
+import { StoreModule } from '@ngrx/store';
 
 @NgModule({
    declarations: [
@@ -44,7 +45,8 @@ import { PlayerItemComponent } from './components/score-keeper/player-list/playe
    imports: [
       BrowserModule,
       FormsModule,
-      AppRoutingModule
+      AppRoutingModule,
+      StoreModule.forRoot({}, {})
    ],
    providers: [],
    bootstrap: [
